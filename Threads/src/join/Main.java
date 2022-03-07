@@ -9,8 +9,6 @@ public class Main {
             Thread.sleep(2000);
             System.out.println("i = " + i);
             if (i == 2) {
-                // Метод join(), останавливает поток, в котором выполняется метод join()
-                // И будет заблокирован(поток main), пока не закончится поток Other
                 System.out.println(Thread.currentThread().getName());
                 other.join();
             }
